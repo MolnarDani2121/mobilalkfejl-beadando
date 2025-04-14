@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_light"
-    android:padding="30dp">
+    android:padding="40dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
@@ -17,7 +17,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/login"
-            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:textSize="35sp"
             app:layout_constraintEnd_toEndOf="@id/main"
             app:layout_constraintStart_toStartOf="@id/main"
             app:layout_constraintTop_toTopOf="@id/main" />
@@ -27,9 +28,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:autofillHints=""
+            android:backgroundTint="@color/black"
             android:hint="@string/email"
             android:inputType="textEmailAddress"
-            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="@id/loginTitleTextView"
             app:layout_constraintStart_toStartOf="@id/loginTitleTextView"
             app:layout_constraintTop_toBottomOf="@id/loginTitleTextView" />
@@ -40,9 +44,12 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:autofillHints=""
+            android:backgroundTint="@color/black"
             android:hint="@string/password"
             android:inputType="textPassword"
-            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="@id/emailEditText"
             app:layout_constraintStart_toStartOf="@id/emailEditText"
             app:layout_constraintTop_toBottomOf="@id/emailEditText" />
@@ -55,6 +62,8 @@
             android:backgroundTint="@color/color_primary"
             android:onClick="Login"
             android:text="@string/login"
+            android:textColor="@color/white"
+            android:textSize="15sp"
             app:layout_constraintEnd_toStartOf="@id/userHasAccountText"
             app:layout_constraintStart_toStartOf="@id/passwordEditText"
             app:layout_constraintTop_toBottomOf="@id/passwordEditText" />
@@ -64,6 +73,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/userHasNoAccount"
+            android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="@id/passwordEditText"
             app:layout_constraintStart_toEndOf="@id/loginButton"
             app:layout_constraintTop_toBottomOf="@id/passwordEditText" />
@@ -75,6 +85,8 @@
             android:backgroundTint="@color/color_primary"
             android:onClick="toRegistration"
             android:text="@string/register"
+            android:textColor="@color/white"
+            android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="@id/userHasAccountText"
             app:layout_constraintStart_toStartOf="@id/userHasAccountText"
             app:layout_constraintTop_toBottomOf="@id/userHasAccountText" />

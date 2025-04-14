@@ -17,7 +17,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/registration"
-            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:textSize="35sp"
             app:layout_constraintEnd_toEndOf="@id/main"
             app:layout_constraintStart_toStartOf="@id/main"
             app:layout_constraintTop_toTopOf="@id/main" />
@@ -27,9 +28,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:backgroundTint="@color/black"
             android:hint="@string/email"
             android:importantForAutofill="no"
             android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="@id/registrationTitleTextView"
             app:layout_constraintStart_toStartOf="@id/registrationTitleTextView"
@@ -50,10 +54,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:backgroundTint="@color/black"
                 android:ems="10"
                 android:hint="@string/firstName"
                 android:importantForAutofill="no"
                 android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
                 android:textSize="20sp" />
 
             <EditText
@@ -61,10 +68,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:backgroundTint="@color/black"
                 android:ems="10"
                 android:hint="@string/lastName"
                 android:importantForAutofill="no"
                 android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
                 android:textSize="20sp" />
 
         </LinearLayout>
@@ -86,10 +96,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:backgroundTint="@color/black"
                 android:ems="10"
                 android:hint="@string/password"
                 android:importantForAutofill="no"
                 android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
                 android:textSize="20sp" />
 
             <EditText
@@ -97,10 +110,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:backgroundTint="@color/black"
                 android:ems="10"
                 android:hint="@string/passwordConfirm"
                 android:importantForAutofill="no"
                 android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
                 android:textSize="20sp" />
         </LinearLayout>
 
@@ -112,6 +128,8 @@
             android:backgroundTint="@color/color_primary"
             android:onClick="register"
             android:text="@string/registration"
+            android:textColor="@color/white"
+            android:textSize="15sp"
             app:layout_constraintEnd_toStartOf="@id/userHasAccountText"
             app:layout_constraintStart_toStartOf="@id/passwordLinearLayout"
             app:layout_constraintTop_toBottomOf="@id/passwordLinearLayout" />
@@ -121,6 +139,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/userHasAccount"
+            android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="@id/passwordLinearLayout"
             app:layout_constraintStart_toEndOf="@id/registerButton"
             app:layout_constraintTop_toBottomOf="@id/passwordLinearLayout" />
@@ -132,6 +151,8 @@
             android:backgroundTint="@color/color_primary"
             android:onClick="toLogin"
             android:text="@string/login"
+            android:textColor="@color/white"
+            android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="@id/userHasAccountText"
             app:layout_constraintStart_toStartOf="@id/userHasAccountText"
             app:layout_constraintTop_toBottomOf="@id/userHasAccountText" />
