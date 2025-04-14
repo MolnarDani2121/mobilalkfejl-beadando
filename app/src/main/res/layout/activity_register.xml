@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light"
+    android:padding="30dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".RegisterActivity">
+
+        <TextView
+            android:id="@+id/registrationTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/registration"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="@id/main"
+            app:layout_constraintStart_toStartOf="@id/main"
+            app:layout_constraintTop_toTopOf="@id/main" />
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/email"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@id/registrationTitleTextView"
+            app:layout_constraintStart_toStartOf="@id/registrationTitleTextView"
+            app:layout_constraintTop_toBottomOf="@id/registrationTitleTextView" />
+
+        <EditText
+            android:id="@+id/firstNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/firstName"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@id/emailEditText"
+            app:layout_constraintStart_toStartOf="@id/emailEditText"
+            app:layout_constraintTop_toBottomOf="@id/emailEditText" />
+
+        <EditText
+            android:id="@+id/lastNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/lastName"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@id/firstNameEditText"
+            app:layout_constraintStart_toStartOf="@id/firstNameEditText"
+            app:layout_constraintTop_toBottomOf="@id/firstNameEditText" />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@id/lastNameEditText"
+            app:layout_constraintStart_toStartOf="@id/lastNameEditText"
+            app:layout_constraintTop_toBottomOf="@id/lastNameEditText" />
+
+        <EditText
+            android:id="@+id/passwordConfirmEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/passwordConfirm"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@id/passwordEditText"
+            app:layout_constraintStart_toStartOf="@id/passwordEditText"
+            app:layout_constraintTop_toBottomOf="@id/passwordEditText" />
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/color_primary"
+            android:onClick="register"
+            android:text="@string/registration"
+            app:layout_constraintEnd_toEndOf="@id/passwordConfirmEditText"
+            app:layout_constraintStart_toStartOf="@id/passwordConfirmEditText"
+            app:layout_constraintTop_toBottomOf="@id/passwordConfirmEditText" />
+
+        <TextView
+            android:id="@+id/userHasAccountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/userHasAccount"
+            app:layout_constraintEnd_toEndOf="@id/registerButton"
+            app:layout_constraintStart_toStartOf="@id/registerButton"
+            app:layout_constraintTop_toBottomOf="@id/registerButton" />
+
+        <Button
+            android:id="@+id/toLoginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/color_primary"
+            android:onClick="toLogin"
+            android:text="@string/login"
+            app:layout_constraintEnd_toEndOf="@id/userHasAccountText"
+            app:layout_constraintStart_toStartOf="@id/userHasAccountText"
+            app:layout_constraintTop_toBottomOf="@id/userHasAccountText" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

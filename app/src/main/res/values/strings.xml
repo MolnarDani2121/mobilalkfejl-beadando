@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MobilAlkfejlProjekt</string>
+    <string name="registration">Regisztráció</string>
+    <string name="email">Email cím</string>
+    <string name="userName">Felhasználónév</string>
+    <string name="firstName">Vezetéknév</string>
+    <string name="lastName">Keresztnév</string>
+    <string name="password">Jelszó</string>
+    <string name="passwordConfirm">Jelszó megerősítése</string>
+    <string name="userHasAccount">Van már fiókod?</string>
+    <string name="login">Bejelentkezés</string>
+    <string name="userHasNoAccount">Még nincs fiókod?</string>
+    <string name="register">Regisztálj</string>
+    <string name="welcome">Üdvözöllek!</string>
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "572069798964",
+    "project_id": "mobilalkfejlprojekt-68581",
+    "storage_bucket": "mobilalkfejlprojekt-68581.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:572069798964:android:1ad6a8139548f36027d661",
+        "android_client_info": {
+          "package_name": "com.example.mobilalkfejlprojekt"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBdaQF1NGYnQLwJhreXCMx2EnGvTouRjw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
