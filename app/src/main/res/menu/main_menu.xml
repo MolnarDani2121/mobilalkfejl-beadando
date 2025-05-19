@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_admin"
+        android:icon="@drawable/ic_admin"
+        android:title="Admin"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_basket"
+        android:title="Basket"
+        app:actionLayout="@layout/custom_menu_item"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_logout"
+        android:icon="@drawable/ic_logout"
+        android:title="Logout"
+        app:showAsAction="always" />
+
+</menu> 

@@ -12,4 +12,54 @@
     <string name="userHasNoAccount">Még nincs fiókod?</string>
     <string name="register">Regisztálj</string>
     <string name="welcome">Üdvözöllek!</string>
+    <string name="search">Keresés</string>
+    <string name="basket">Kosár</string>
+    <string name="viewselector">ViewSelector</string>
+    <string name="settings">Beállítások</string>
+    <string name="logout">Kijelentkezés</string>
+    <string name="name">Név</string>
+    <string name="description">Leírás</string>
+    <string name="Price">Ár</string>
+    <string name="edit">Szerkesztés</string>
+    <string name="delete">Törlés</string>
+
+    <string-array name="food_names">
+        <item>Margherita pizza</item>
+        <item>Spagetti carbonara</item>
+        <item>Csirke cordon bleu</item>
+        <item>Gulyásleves</item>
+        <item>Fish and chips</item>
+        <item>Ratatouille</item>
+        <item>Bratwurst kolbász</item>
+        <item>Lasagne</item>
+        <item>Bécsi szelet</item>
+        <item>Tiramisu</item>
+    </string-array>
+
+    <string-array name="food_description">
+        <item>Klasszikus olasz pizza paradicsomszósszal, mozzarellával és bazsalikommal</item>
+        <item>Krémes tésztás étel szalonnával, tojással és sajttal</item>
+        <item>Rántott csirkemell sonkával és sajttal töltve</item>
+        <item>Marhahúsból készült, fűszeres magyar leves zöldségekkel</item>
+        <item>Rántott hal sült krumplival, angol klasszikus</item>
+        <item>Francia zöldségragu padlizsánnal, cukkinivel és paradicsommal</item>
+        <item>Grillezett német kolbász savanyúkáposztával tálalva</item>
+        <item>Többrétegű tésztaétel darált hússal, paradicsomszósszal és besamellel</item>
+        <item>Rántott borjúhús citrommal, osztrák specialitás</item>
+        <item>Kávéval átitatott olasz desszert mascarponéval és kakaóval</item>
+    </string-array>
+
+    <string-array name="food_prices">
+        <item>11 flurbo</item>
+        <item>13 flurbo</item>
+        <item>14 flurbo</item>
+        <item>12 flurbo</item>
+        <item>10 flurbo</item>
+        <item>9 flurbo</item>
+        <item>11 flurbo</item>
+        <item>13 flurbo</item>
+        <item>14 flurbo</item>
+        <item>8 flurbo</item>
+    </string-array>
+
 </resources>

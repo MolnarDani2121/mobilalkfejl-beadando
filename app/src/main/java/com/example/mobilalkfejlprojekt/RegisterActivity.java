@@ -2,7 +2,6 @@ package com.example.mobilalkfejlprojekt;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -16,17 +15,15 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.Firebase;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class RegisterActivity extends AppCompatActivity {
-    EditText emailEditText;
-    EditText firstNameEditText;
-    EditText lastNameEditText;
-    EditText passwordEditText;
-    EditText passwordConfirmEditText;
-
+    private EditText emailEditText;
+    private EditText firstNameEditText;
+    private EditText lastNameEditText;
+    private EditText passwordEditText;
+    private EditText passwordConfirmEditText;
     private FirebaseAuth auth;
 
     @Override
@@ -45,9 +42,7 @@ public class RegisterActivity extends AppCompatActivity {
         lastNameEditText = findViewById(R.id.lastNameEditText);
         passwordEditText = findViewById(R.id.passwordEditText);
         passwordConfirmEditText = findViewById(R.id.passwordConfirmEditText);
-
         auth = FirebaseAuth.getInstance();
-
     }
 
     public void register(View view) {
@@ -77,7 +72,7 @@ public class RegisterActivity extends AppCompatActivity {
         }
     }
 
-    public void login(){
+    private void login(){
         Intent loginIntent = new Intent(this, MainLoggedInActivity.class);
         startActivity(loginIntent);
         overridePendingTransition(R.anim.slide_in_top, R.anim.slide_out_bottom);

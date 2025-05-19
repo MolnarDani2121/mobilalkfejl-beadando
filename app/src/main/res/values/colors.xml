@@ -6,4 +6,5 @@
     <color name="color_primary">#FF6B35</color>
     <color name="color_secondary">#FF4F4F</color>
     <color name="color_accent">#FFC857</color>
+    <color name="red">#FF0000</color>
 </resources>
